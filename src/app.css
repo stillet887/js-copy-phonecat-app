@@ -1,0 +1,156 @@
+body {
+    padding: 0 20px;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    padding: 20px 0;
+}
+li:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+
+[data-page-mode="catalog"] #productPage {
+    display: none
+}
+
+[data-page-mode="phonePage"] #catalog,
+[data-page-mode="phonePage"] #tools {
+    display: none
+}
+
+.hidden {
+    display: none;
+}
+
+.app {
+    display: flex;
+}
+
+.sidebar {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.catalog-phone {
+    display: flex;
+}
+.catalog-phone__img-wrapper {
+    flex-shrink: 0;
+}
+.catalog-phone__img {
+    width: 100px;
+    cursor: pointer;
+}
+.catalog-phone__info {
+    padding: 0 10px;
+}
+.catalog-phone__name {
+    margin-top: 0;
+    cursor: pointer;
+}
+.catalog-phone__description {
+    margin: 0;
+}
+.catalog-phone__btn-section {
+    flex-grow: 1;
+    text-align: right;
+}
+.catalog-phone__btn {
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cart {
+    position: relative;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid black;
+}
+.cart__title {
+    position: absolute;
+    top: -13px;
+    left: 5px;
+    margin: 0;
+    padding: 3px 7px;
+    background: white;
+}
+.cart__list {
+    padding: 0;
+}
+
+.cart-phone {
+    display: flex;
+    padding-right: 5px;
+}
+.cart-phone__img-wrapper {
+    flex-shrink: 0;
+}
+.cart-phone__img {
+    width: 50px;
+}
+.cart-phone__name {
+    padding-left: 10px;
+}
+.cart-phone__count {
+    flex-grow: 1;
+    padding: 0 10px;
+    min-width: 30px;
+    text-align: right;
+}
+.cart-phone__btn {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 11px;
+    cursor: pointer;
+}
+
+.phone-page {
+    padding: 20px 0 0 30px;
+}
+.phone-page__content {
+    display: flex;
+    margin-top: 20px;
+}
+.phone-page__img-wrapper {
+    width: 300px;
+    flex-shrink: 0;
+}
+.phone-page__main-img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.phone-page__thumbs {
+
+}
+.phone-page__thumbs img {
+    width: 65px;
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.phone-page__title {
+    margin-top: 0;
+}
+.phone-page__info {
+    padding: 0 20px;
+}
+.phone-page__btn {
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.catalog-tools {
+    margin-top: 20px;
+}
+.catalog-tools__search {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,18 @@
+{
+  "name": "js-phonecat-project",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "api-server": "node server.js",
+    "dev": "./node_modules/.bin/webpack-dev-server --open --inline --hot"
+  },
+  "devDependencies": {
+    "node-static": "^0.7.10",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "dependencies": {
+    "extract-text-webpack-plugin": "^3.0.2"
+  }
+}

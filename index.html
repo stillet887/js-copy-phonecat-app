@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="src/app.css">
+  <script src="src/app.js" defer type="module"></script>
+</head>
+
+<body>
+
+<div id="samples" class="hidden">
+  <li id="phoneBasicSample" class="catalog-phone js-catalog-phone">
+    <div class="catalog-phone__img-wrapper">
+      <img class="catalog-phone__img js-catalog-phone-img">
+    </div>
+    <div class="catalog-phone__info">
+      <h2 class="catalog-phone__name js-catalog-phone-name">
+      </h2>
+
+      <p class="catalog-phone__description js-catalog-phone-description"></p>
+    </div>
+    <div class="catalog-phone__btn-section">
+      <span class="catalog-phone__btn js-catalog-phone-btn">
+        +
+      </span>
+    </div>
+  </li>
+
+  <li class="cart-phone" id="phoneCartSample">
+    <div class="cart-phone__img-wrapper">
+      <img class="cart-phone__img js-cart-phone-img">
+    </div>
+    <div class="cart-phone__name js-cart-phone-name">
+    </div>
+    <div class="cart-phone__count">
+      х
+      <span class="cart-phone__count-value js-cart-phone-count">1</span>
+    </div>
+    <div class="cart-phone__btn js-cart-phone-btn">
+      -
+    </div>
+  </li>
+</div>
+
+<div id="app" data-page-mode="catalog" class="app">
+  <div class="sidebar">
+    <div id="tools" class="catalog-tools">
+      <div class="catalog-tools__search">
+        Search:
+        <input class="catalog-tools__search-input" id="catalogSearch">
+      </div>
+      <div class="catalog-tools__sort">
+        Sort by:
+        <select class="catalog-tools__search-select" id="catalogSort">
+          <option value="name">Alphabetical</option>
+          <option value="age">Newest</option>
+        </select>
+      </div>
+    </div>
+    <div id="cart" class="cart">
+      <h4 class="cart__title">Cart</h4>
+      <ul class="cart__list js-cart-list">
+
+      </ul>
+    </div>
+  </div>
+
+  <div class="main">
+    <div id="catalog"></div>
+    <div id="productPage" class="phone-page">
+      <span  class="phone-page__btn js-go-back">
+        < Back
+      </span>
+
+      <div class="phone-page__content">
+        <div class="phone-page__img-wrapper">
+          <img class="phone-page__main-img js-phone-page-main-img">
+          <div class="phone-page__thumbs js-phone-page-thumbs">
+          </div>
+        </div>
+
+        <div class="phone-page__info">
+          <h1 class="phone-page__title js-phone-page-title"></h1>
+          <p class="phone-page__description js-phone-page-description"></p>
+        </div>
+
+        <div class="phone-page__btn-wrapper">
+          <span class="phone-page__btn js-add-to-cart">+</span>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
